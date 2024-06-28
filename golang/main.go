@@ -22,6 +22,9 @@ func main() {
 	app.Post("/encode", func (c *fiber.Ctx) error {
 		c.Accepts("application/json")
 
+		// todo: Validations (isset, number of characters)
+		// todo: Decode morse to plain text
+
 		r := new(Response)
 
 		if err := c.BodyParser(r); err != nil {
