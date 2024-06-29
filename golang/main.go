@@ -7,10 +7,6 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func init() {
-	
-}
-
 func main() {
 	app := fiber.New()
 	routes.Setup(app)
