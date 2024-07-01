@@ -132,7 +132,7 @@ func morseCodeEncode( plainText string ) string {
 		",":"--..--",
 		"?":"..--..",
 		"/":"-..-.",
-		" ":" ",
+		" ":"/",
 	}
 
 	lookupString := strings.Split(strings.ToLower(plainText), "")
@@ -214,7 +214,7 @@ func findLetter(letter string) string {
 		",":"--..--",
 		"?":"..--..",
 		"/":"-..-.",
-		" ":" ",
+		" ":"/",
 	}
 
 	for key, value := range morseCodeCodes {
